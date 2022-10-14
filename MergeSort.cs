@@ -1,15 +1,5 @@
-﻿/*
-using System;
+/*using System;
 
-int[] arr = new int[]
-{8, 4, 2, 3, 9, 12, 11, 1 };
-
-mergesort(arr);
-
-foreach (var x in arr)
-{
-    Console.Write($"{x}, ");
-}
 
 void mergesort(int[] arr)
 {
@@ -18,12 +8,13 @@ void mergesort(int[] arr)
     mergesortrec(arr, arraux, 0, e);
 }
 
-void mergesort(int[] arr,
-int s,
-int e)
-{
 
-}
+// void mergesort(int[] arr, //DUAS FUNCOES COM O MESMO NOME.
+// int s,
+// int e)
+// {
+
+// }
 
 void mergesortrec(
     int[] arr, 
@@ -38,10 +29,11 @@ void mergesortrec(
     merge(arr, arraux, s, p, e);
 }
 
-void merge(int[] arr, 
+void merge(int[] arr,
+int[] arraux, // Faltou um parametro aqui, o int[] arraux
 int s, 
 int p, 
-int e)
+int e) 
 {
     int i = s, j = p, k = s;
     while (i < p && j < e)
@@ -62,7 +54,7 @@ int e)
 
     while (i < p)
     {
-        arraux[k] = arr[j];
+        arraux[k] = arr[i]; // aqui tava arr[j] e o certo é o arr[i]
         i++;
         k++;
     }
@@ -78,4 +70,15 @@ int e)
     {
         arr[t] = arraux[t];
     }
+}
+
+
+
+int[] arr = new int[]
+{8, 4, 2, 3, 9, 12, 11, 1 };
+
+mergesort(arr);
+// Teu foreach tava errado, como eu apaguei tudo ele pra testar eu nao vi oq tava
+foreach (int numero in arr){
+    Console.Write(numero);
 }

@@ -1,3 +1,4 @@
+/*
 using System;
 
 char c = 'a'; // 16 bits, char é usado só para um caracter
