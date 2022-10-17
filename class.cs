@@ -1,4 +1,4 @@
-using System;
+/*using System;
 public class Pessoa
 {
     public Pessoa (string nome, string senha, long cpf)
@@ -34,7 +34,7 @@ public class Pessoa
     {
         cpf = long.Parse(
             value.Replace(".", "")
-            .Replace("-", ""));
+            .Replace("-", ""));*/
     
     /*public string CPF
     {
@@ -50,8 +50,8 @@ public class Pessoa
             
         }
     }*/
-   
-    }
+
+    /*}
     private string senha;
     private string criptografar(string s)
     {
@@ -66,7 +66,7 @@ public class Pessoa
     {
         senha = criptografar(value);
     }
-}
+}*/
 
 //Pessoa pessoa = new Pessoa("Edjarma", "Xispita");
 
