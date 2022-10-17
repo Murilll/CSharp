@@ -13,4 +13,6 @@ PairSet pair2 = new PairSet();
 pair.A = empty3;
 pair.B = empty4;
 
-Console.WriteLine(pair.IsIn(empty2));
+Set set = pair.Union(pair2);
+
+Console.WriteLine(pair.IsIn(empty));

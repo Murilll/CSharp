@@ -15,11 +15,15 @@ public class NaturalSet : set
     }
 }*/
 
-public class Set
+public abstract class Set
 {
-    public virtual bool IsIn(Set set)
+    public abstract bool IsIn(Set set);
+    public abstract Set Union(Set set);
     {
-        return false;
+        UnionSet unionSet = new UnionSet();
+        unionSet.A = this;
+        unionSet.B = set;
+        return = 
     }
 }
 
@@ -32,6 +36,11 @@ public class EmptySet : Set
     public override bool Equals(object obj)
     {
         return obj is EmptySet;
+    }
+
+    public override Set Union(Set set)
+    {
+        return set;
     }
 
 }
@@ -58,7 +67,7 @@ public class PairSet : Set
         return false;
     }
 }
-public class NaturalSet : Set
+/*public class NaturalSet : Set
 {
     public override bool IsIn(Set set)
     {
@@ -68,7 +77,7 @@ public class NaturalSet : Set
         }
         return false;
     }
-}
+}*/
 
 /*EmptySet empty = new EmptySet();
 EmptySet empty2 = new EmptySet();
