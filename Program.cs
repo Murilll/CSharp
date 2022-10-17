@@ -78,4 +78,4 @@ int e)
     {
         arr[t] = arraux[t];
     }
-}
+}*/
