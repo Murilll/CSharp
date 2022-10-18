@@ -15,7 +15,7 @@ public class NaturalSet : set
     }
 }*/
 
-public abstract class Set
+/*public abstract class Set
 {
     public abstract bool IsIn(Set set);
     public abstract Set Union(Set set);
@@ -66,7 +66,7 @@ public class PairSet : Set
         }
         return false;
     }
-}
+}*/
 /*public class NaturalSet : Set
 {
     public override bool IsIn(Set set)

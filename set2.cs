@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 EmptySet empty = new EmptySet();
 EmptySet empty2 = new EmptySet();
@@ -15,4 +15,4 @@ pair.B = empty4;
 
 Set set = pair.Union(pair2);
 
-Console.WriteLine(pair.IsIn(empty));
+Console.WriteLine(pair.IsIn(empty));*/
