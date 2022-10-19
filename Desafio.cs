@@ -5,11 +5,11 @@ Input b = new Input();
 Input c = new Input();
 AndGate and = new AndGate();
 OrGate or = new OrGate();
-NoteGate not = new NoteGate();*/
+NoteGate not = new NoteGate();
 
 Door InputA = new DoorAnd();
 Door InputB = new DoorAnd();
-Door InputC = new DoorAnd();
+Door InputC = new DoorAnd();*/
 
 
 
@@ -38,12 +38,11 @@ public class DoorAnd : Door
     }
 }
 
-public class DoorOr : Door
+public class DoorOr : DoorAnd
 {
     public DoorOr()
     {
-        this.Door1 = 1;
-        this.Door2 = 0;
+
         if (this.Door1 == 1 && this.Door2 == 0 || this.Door1 == 0 && this.Door2 == 1 || this.Door1 == 1 && this.Door2 == 1)
         {
             Console.WriteLine("Verdadeiro");
@@ -57,12 +56,11 @@ public class DoorOr : Door
     }
 }
 
-public class DoorNot : Door
+public class DoorNot : DoorOr
 {
     public DoorNot()
     {
-        this.Door1 = 0;
-        this.Door2 = 0;
+
         if (this.Door1 == 1 && this.Door2 == 1)
         {
             Console.WriteLine("Verdadeiro");
