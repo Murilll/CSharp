@@ -1,4 +1,4 @@
-/*using System;
+using System;
 
 Input a = new Input();
 Input b = new Input();
@@ -7,9 +7,14 @@ AndGate and = new AndGate();
 OrGate or = new OrGate();
 NoteGate not = new NoteGate();
 
-Door InputA = new DoorAnd();
-Door InputB = new DoorAnd();
-Door InputC = new DoorAnd();
+a.Connect(and);
+b.Connect(and);
+c.Connect(or);
+and.Connect(or);
+or.Connect(not);
+
+b.IsOn = true;
+c.IsOn = true;
 
 Console.WriteLine(not.Output);
 public abstract class Component
@@ -20,5 +25,65 @@ public abstract class Component
     public void Connect (Component component)
     {
         this.Next = component;
+        this.Next.ConnectInput
+        (component);
     }
-}*/
+    public virtual void ConnectInput(Component component) { }
+}
+public class Input : Component 
+{
+    public bool ison = false; 
+    public bool IsOn
+    {
+        get
+        {
+            return ison;
+        }
+        set
+        {
+            this.ison = value;
+            this.Update();
+        }
+    }
+
+    public override bool Output
+    {
+        get
+        {
+            return ison;
+        }
+    }
+
+    public override void Update()
+    {
+        this.Next?.Update();
+    }
+}
+public class AndGate : Component
+{
+    private Component inputA = null;
+    private Component inputB = null;
+    public override bool Output => throw new NotImplementedException();
+    public override void Update()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Update()
+    {
+        throw new
+    }
+    public override void Update()
+    {
+        throw new
+        NotImplementedException();
+    }
+
+    protected override void ConnectInput(Component component)
+    {
+        if (inputA == null)
+        {
+            this.inputA = component;
+        }
+    }
+}
