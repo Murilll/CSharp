@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 Input a = new Input();
 Input b = new Input();
@@ -86,4 +86,4 @@ public class AndGate : Component
             this.inputA = component;
         }
     }
-}
+}*/
