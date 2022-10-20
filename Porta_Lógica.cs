@@ -86,4 +86,18 @@ public class AndGate : Component
             this.inputA = component;
         }
     }
-}*/
+}
+public class HalfSum : IntegratedCircuit
+{
+    private Component carryOut = null;
+    private Component ResultOut = null;
+    public HalfSum()
+    {
+        XorGate xor = new XorGate();
+        AndGAte and = new AndGate();
+
+        carryOut =  and;
+        ResultOut = xor;
+    }
+}
+*/

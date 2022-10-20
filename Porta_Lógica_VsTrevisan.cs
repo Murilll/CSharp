@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 Entrada a = new Entrada();
 Entrada b = new Entrada();
@@ -107,4 +107,4 @@ public class EPorta : Component
         else if (inputB == null)
             inputB = component;
     }
-}
+}*/
