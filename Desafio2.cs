@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 SomaComplex = new SomaComplex();
 
@@ -17,4 +17,4 @@ public class Soma : SomaComplex
     this.result = this.Number + this.Number2;
     Console.WriteLine(" ${this.Number} + ${this.Number2} + ${this.Number2} + = ")
 }
-}
+}*/

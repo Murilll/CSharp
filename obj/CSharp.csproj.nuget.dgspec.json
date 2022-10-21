@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\disrct\\Desktop\\C#\\csharp\\CSharp.csproj": {}
+    "C:\\Users\\disrct\\Desktop\\C#\\CSharp\\CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\disrct\\Desktop\\C#\\csharp\\CSharp.csproj": {
+    "C:\\Users\\disrct\\Desktop\\C#\\CSharp\\CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\disrct\\Desktop\\C#\\csharp\\CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\disrct\\Desktop\\C#\\CSharp\\CSharp.csproj",
         "projectName": "CSharp",
-        "projectPath": "C:\\Users\\disrct\\Desktop\\C#\\csharp\\CSharp.csproj",
+        "projectPath": "C:\\Users\\disrct\\Desktop\\C#\\CSharp\\CSharp.csproj",
         "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\disrct\\Desktop\\C#\\csharp\\obj\\",
+        "outputPath": "C:\\Users\\disrct\\Desktop\\C#\\CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
