@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 public abstract class Player
 {
@@ -85,15 +85,15 @@ public class World
     public Player[] Jogadores (get;set;) = new Player [1000];
     {
     for (int i = 0; i < 10; i++)
-    if (p1.Decide == true) && (p2.Decide == true)
+    if (p1.Decide == true && p2.Decide == true)
     p1.moeda += 1;
     p2.moeda += 1;
 
-    else if (p1.Decide == true) && (p2.Decide == false)
+    else if (p1.Decide == true && p2.Decide == false)
     p1.moeda = p1.moeda + 4;
     p2.moeda = p2.moeda - 4;
 
-    else if (p1.Decide == false) && (p2.Decide == true)
+    else if (p1.Decide == false && p2.Decide == true)
     p2.moeda = p2.moeda - 4;
     p1.moeda = p1.moeda + 4;
 
@@ -102,4 +102,4 @@ public class World
     p2.moeda += 0;
     }
 
-}
+}*/
