@@ -1,4 +1,4 @@
-/*using System;
+using System;
 
 
 void mergesort(int[] arr)
@@ -81,4 +81,4 @@ mergesort(arr);
 // Teu foreach tava errado, como eu apaguei tudo ele pra testar eu nao vi oq tava
 foreach (int numero in arr){
     Console.Write(numero);
-}*/
+}

@@ -1,20 +1,20 @@
-/*using System.Collections;
+/*using System.Collections.Generic;
 using System;
 
-LinkedList<string> list = new LinkedList<string>();     //  LinkedList<<List>int> list = new LinkedList<<List>Int>(); lista de lista = matriz
-list.Add("teste");
-list.Add("lucas");
-list.Add("andre");
-list.Add("dALE");
-list.Add("CHAMA");
+List<int> list = new List<int>();
+list.Add(10);
+list.Add(11);
+list.Add(12);
+list.Add(13);
+list.Add(14);
+list.Add(15);
 
-
-for (int i=0; i < list.Count; i++)
-{
-    Console.WriteLine(list[i]);
-}
-
-
+list
+    .Skip(2)
+    .Take(3)
+    .ToStringList()
+    .Concat()
+    .Print();
 public class LinkedList<T>
 {
     private LinkedListNode<T> first = null;
@@ -90,5 +90,57 @@ public class LinkedListNode<T>
     public LinkedListNode(T value)
     {
         this.Value = value;
+    }
+}
+
+public static class MyExtensionMethods
+{
+    public static double Sqrt(this double x)
+    {
+        return Math.Sqrt(x);
+    }
+    public static void Print<T>(this T obj)
+    {
+        Console.WriteLine(obj);
+    }
+
+    public static List<T> Take<T>(this List<T> list, int N)
+    {
+        List<T> result = new List<T>();
+        for (int i = 0; i < N && i < list.Count; i ++)
+        {
+            result.Add(list[i]);
+        }
+        return result;
+    }
+    public static List<T> Skip<T>(this List<T> list, int N)
+    {
+        List<T> result = new List<T>();
+        for (int i = N; i < list.Count; i ++)
+        {
+            result.Add(list[i]);
+        }
+        return result;
+    }
+
+    public static List<string> ToStringList<T>(this List<T> list)
+    {
+        List<string> result = new List<string>();
+        for (int i = 0; i < list.Count; i ++)
+        {
+            result.Add(list[i]?.ToString() ?? "");
+        }
+        return result;
+    }
+
+
+    public static string Concat (this List<string> list)
+    {
+        string result = "";
+        for (int i = 0; i < list.Count; i ++)
+        {
+            result += list[i];
+        }
+        return result;
     }
 }*/
